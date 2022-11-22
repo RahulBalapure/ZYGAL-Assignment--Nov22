@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Example of Id attribute in CSS
+</title>
+
+<script>
+var box5 = document.getElementById("box5") ;
+var antiClockWise = document.getElementById("antiClockWise") ;
+var clockWise = document.getElementById("clockWise") ;
+var rotateValue = box5.style.transform;
+rotateSum;
+antiClockWise.onclick=function ()
+ {
+    rotateSum=rotateValue+"rotate(-90deg)";
+    box5.style.transform = rotateSum;
+    rotateValue=rotateSum;
+
+}
+
+</script>
+
+
+
+
+<style>
+#box1{
+    float:left;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  display: flex;
+}
+#box2{
+    float:right;
+    width: 250px;
+  height: 250px;
+    background-color: yellow;
+    
+  }
+  #box12{
+    float:left;
+  height: 250pX; 
+  width: 140px;
+  
+  
+}
+#box34{
+    float:left;
+    width: 260px;
+  height: 250px;
+     ;
+    
+  }
+
+  #box4{
+    float:left;
+    width: 250px;
+  height: 250px;
+  background-color: orange;
+  }
+
+  #box3{
+    float: right;
+    width: 250px;
+  height: 250px;
+    background-color: green;
+  }
+  #box5{
+    float:left;
+    width: 500px;
+    height: 750px;
+    transform: rotate(0deg);
+  }
+
+
+</style>
+</head>
+<body>
+    <div id="box5" >
+    <div id="box1">
+        <b>1</b>
+    </div>
+
+    <div id="box2";  >
+        <b>2</b>
+    </div>
+    <div id="box12">
+
+       <button type="button"  style="height: 250pX; width: 140px;" id="antiClockWise">Anti-ClockWise</button>
+      
+    </div>
+
+    <div id="box34";  >
+        <button type="button"   style="height: 265pX; width:96px;" id="clockWise">ClockWise</button>
+    </div>
+
+
+
+<div id="box4">
+        <b>4</b>
+    </div>
+
+    <div id="box3">
+        <b>3</b>
+    </div>
+</div>
+</body>
+</html> 
+
+ 
